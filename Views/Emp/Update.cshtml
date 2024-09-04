@@ -1,0 +1,28 @@
+﻿@model Emp
+
+<div class="row">
+<div class="col-md-4">
+    <form asp-action="update" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="pname" class="control-label"></label>
+            <input asp-for="pname" class="form-control" />
+            <span asp-validation-for="pname" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="department" class="control-label"></label>
+            <input asp-for="department" class="form-control" />
+            <span asp-validation-for="department" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="salary" class="control-label"></label>
+            <input asp-for="salary" class="form-control" />
+            <span asp-validation-for="salary" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
+</div>
